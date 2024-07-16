@@ -14,15 +14,11 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: 'en',
-    element: <App />,
-  },
-  {
     path: 'o-projekte',
     element: <AboutProjectPage />,
   },
   {
-    path: 'en/about-project',
+    path: 'about-project',
     element: <AboutProjectPage />,
   },
   {
@@ -30,7 +26,7 @@ const router = createBrowserRouter([
     element: <ResearcherPage />,
   },
   {
-    path: 'en/researcher',
+    path: 'researcher',
     element: <ResearcherPage />,
   },
   {
@@ -38,7 +34,7 @@ const router = createBrowserRouter([
     element: <ContactPage />,
   },
   {
-    path: 'en/contact',
+    path: 'contact',
     element: <ContactPage />,
   }
 ]);

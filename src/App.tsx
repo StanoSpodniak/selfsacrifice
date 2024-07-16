@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './components/Header';
+import Header from './components/header/Header';
 import AboutProject from './components/AboutProject';
 import { useTranslation } from 'react-i18next';
 import Footer from './components/Footer';
