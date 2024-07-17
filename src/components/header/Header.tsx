@@ -4,11 +4,17 @@ import style from './Header.module.css';
 
 const Header = () => {
   const [language, setLanguage] = useState("sk");
+  const [activeLink, setActiveLink] = useState("/");
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
     return () => {
       setLanguage(localStorage.getItem("i18nextLng") || "sk");
+      setActiveLink(localStorage.getItem("activeLink") || "/");
+      if (location.pathname === '/') {
+        localStorage.setItem('activeLink', "/");
+        setActiveLink("/")
+      }
     };
   }, []);
 
@@ -17,6 +23,10 @@ const Header = () => {
     localStorage.setItem('i18nextLng', lng);
     setLanguage(lng);
   };
+
+  const changeActiveLink = (lnk: string) => {
+    localStorage.setItem('activeLink', lnk);
+  }
 
   return (
     <>
@@ -32,15 +42,25 @@ const Header = () => {
               </div>
               <nav className={style.navigation}>
                 <ul>
-                    {/*Treba farebne oznacit nav element, ktory je aktualny*/}
-                    <li className={style.navItem}><a href={language === "en" ? "/about-project" : "/o-projekte"}>{t('navAboutProject')}</a></li>
-                    <li className={style.navItem}><a href={language === "en" ? "/researcher" : "/riesitel"}>{t('navResearcher')}</a></li>
-                    <li className={style.navItem}><a href={language === "en" ? "/contact" : "/kontakt"}>{t('navContact')}</a></li>
+                    <li className={style.navItem}>
+                      <a className={activeLink === 'about' ? `${style.navLinkActive}` : `${style.navLink}`} href={language === "en" ? "/about-project" : "/o-projekte"} onClick={() => changeActiveLink('about')}>
+                        {t('navAboutProject')}
+                      </a>
+                    </li>
+                    <li className={style.navItem}>
+                      <a className={activeLink === 'researcher' ? `${style.navLinkActive}` : `${style.navLink}`} href={language === "en" ? "/researcher" : "/riesitel"} onClick={() => changeActiveLink('researcher')}>
+                        {t('navResearcher')}
+                      </a>
+                    </li>
+                    <li className={style.navItem}>
+                      <a className={activeLink === 'contact' ? `${style.navLinkActive}` : `${style.navLink}`} href={language === "en" ? "/contact" : "/kontakt"} onClick={() => changeActiveLink('contact')}>
+                        {t('navContact')}
+                      </a>
+                    </li>
                 </ul>
               </nav>
             </div>
         </header>
-        <hr></hr>
     </>
   )
 }

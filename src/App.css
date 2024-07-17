@@ -1,1 +1,9 @@
+img {
+    width: 45%;
+}
 
+.homePageBanner {
+    display: flex;
+    justify-content: left;
+    background-color: #101517;
+}

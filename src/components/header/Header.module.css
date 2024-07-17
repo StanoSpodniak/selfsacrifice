@@ -40,12 +40,13 @@ header {
 }
 
 button {
-    padding: 12px 16px;
+    padding: 10px 16px;
     font-size: 16px;
     font-weight: bold;
     background-color: white;
     border: none;
-    border-right: 1px solid gray;
+    border-right: 1px solid lightskyblue;
+    cursor: pointer;
 }
 
 button:last-child {
@@ -53,28 +54,40 @@ button:last-child {
 }
 
 .buttonOn {
-    color: #33ccff;
+    color: #00BFFF;
 }
 
 .buttonOff {
     color:#1e378a;
 }
 
-.navigation li {
+.navItem {
     display: inline-block;
-    padding: 10px 16px;
-    margin-right: 10px;
+    padding: 10px 16px 10px 0;
+    margin: 0 10px;
     font-size: 16px;
     font-weight: bold;
     list-style-type: none;
-    border-right: 1px solid gray;
-}
-
-.navigation a {
-    color: #1e378a;
-    text-decoration: none;
+    border-right: 1px solid lightskyblue;
 }
 
 .navItem:last-child {
     border: none;
 }
+
+.navLink {
+    color: #1e378a;
+    text-decoration: none;
+}
+
+.navLinkActive {
+    color: #00BFFF;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: #00BFFF;
+}
+
+
+

@@ -13,6 +13,9 @@ function App() {
   return (
     <>
       <Header />
+      <div className='homePageBanner'>
+        <img src="./Good_Samaritan.jpg" alt="good samaritan" />
+      </div>
       <h2>{t('homePageTitle')}</h2>
       <AboutProject />
       <Footer />
