@@ -7,3 +7,21 @@ img {
     justify-content: left;
     background-color: #101517;
 }
+
+p {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        width: 100%;
+    }
+
+    .homePageBanner {
+        display: block;
+    }
+
+    .quoteBanner {
+        height: 100px;
+    }
+}

@@ -15,6 +15,9 @@ function App() {
       <Header />
       <div className='homePageBanner'>
         <img src="./Good_Samaritan.jpg" alt="good samaritan" />
+        <div className='qouteBanner'>
+          <p>Quote</p>
+        </div>
       </div>
       <h2>{t('homePageTitle')}</h2>
       <AboutProject />

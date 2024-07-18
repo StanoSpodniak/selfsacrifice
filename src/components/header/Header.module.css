@@ -7,7 +7,7 @@ header {
     margin-left: 20%;
     display: flex;
     align-items: center;
-    width: 240px;
+    width: 220px;
 }
 
 .logo {
@@ -35,7 +35,6 @@ header {
 
 .buttonContainer {
     margin-left: auto;
-    gap: 12px;
     padding: 0 12px 12px 0;
 }
 
@@ -59,6 +58,10 @@ button:last-child {
 
 .buttonOff {
     color:#1e378a;
+}
+
+.hamMenu {
+    display: none;
 }
 
 .navItem {
@@ -89,5 +92,112 @@ button:last-child {
     color: #00BFFF;
 }
 
+.mobileNavLinks {
+    display: none;
+}
 
 
+@media screen and (max-width: 1100px) {
+    .logoContainer {
+        margin-left: 10%;
+    }
+
+    .navContainer {
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .logoContainer {
+        margin-left: 5%;
+    }
+
+    .navContainer {
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 12px 0;
+    }
+    
+    .logoContainer {
+        margin-left: 12px;
+    }
+
+    .logo {
+        width: 75px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .navContainer {
+        margin-right: 12px;
+    }
+
+    .buttonContainer {
+        padding: 0;
+    }
+
+    button {
+        padding: 0 12px;
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+
+    .navContainer {
+        display: block;
+    }
+
+    .navItem {
+        display: none;
+    }
+
+    .hamMenu {
+        display: block;
+        margin-left: auto;
+        margin-right: 12px;
+        width: 40px;
+        height: 40px;
+        background-color: #1e378a;
+        border-radius: 4px;
+    }
+
+    .mobileNavLinks {
+        display: none;
+        flex-direction: column;
+        width: 70%;
+        position: absolute;
+        top: 94px;
+        right: 24px;
+        background-color: white;
+        z-index: 1000;
+    }
+    
+    .mobileNavLinks.active {
+        display: flex;
+    }
+
+    .mobileNavLinks li {
+        padding: 1em;
+        border-bottom: 1px solid #1e378a;
+        list-style-type: none;
+    }
+
+    .mobileNavLinks li:last-child {
+        border: none;
+    }
+
+    .mobileNavLinks li a {
+        color: #1e378a;
+        font-weight: bold;
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+        padding: 1em 7em 1em 1em;
+        margin: -1em -6em -1em -1em;
+    }
+}

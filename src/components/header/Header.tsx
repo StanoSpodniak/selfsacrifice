@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import style from './Header.module.css';
+import { IoIosMenu } from 'react-icons/io';
 
 const Header = () => {
   const [language, setLanguage] = useState("sk");
   const [activeLink, setActiveLink] = useState("/");
   const { t, i18n } = useTranslation();
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     return () => {
@@ -28,6 +31,10 @@ const Header = () => {
     localStorage.setItem('activeLink', lnk);
   }
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
         <header>
@@ -41,6 +48,12 @@ const Header = () => {
                 <button className={language === "en" ? `${style.buttonOn}` : `${style.buttonOff}`} onClick={() => changeLanguage('en')}>EN</button>
               </div>
               <nav className={style.navigation}>
+                <div className={style.hamMenu} onClick={toggleMenu}><IoIosMenu size={40} color='white' /></div>
+                <ul className={`${style.mobileNavLinks} ${isMenuOpen ? style.active : ''}`}>
+                  <li><a href={language === "en" ? "/about-project" : "/o-projekte"}>{t('navAboutProject')}</a></li>
+                  <li><a href={language === "en" ? "/researcher" : "/riesitel"}>{t('navResearcher')}</a></li>
+                  <li><a href={language === "en" ? "/contact" : "/kontakt"}>{t('navContact')}</a></li>
+                </ul>
                 <ul>
                     <li className={style.navItem}>
                       <a className={activeLink === 'about' ? `${style.navLinkActive}` : `${style.navLink}`} href={language === "en" ? "/about-project" : "/o-projekte"} onClick={() => changeActiveLink('about')}>
