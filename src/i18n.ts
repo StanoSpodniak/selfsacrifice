@@ -18,7 +18,7 @@ const resources = {
   },
   en: {
     translation: {
-      mainTitle: "Ethical aspects of selfsacrifice",
+      mainTitle: "Ethical aspects of self-sacrifice",
       navAboutProject: "About project",
       navResearcher: "Researcher",
       navContact: "Contact",

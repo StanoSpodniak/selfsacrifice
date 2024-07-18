@@ -8,8 +8,38 @@ img {
     background-color: #101517;
 }
 
-p {
-    color: white;
+.qouteBanner {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    margin: auto;
+    width: 30%;
+}
+
+blockquote {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #DEB887;
+    line-height: 150%;
+    font-weight: bold;
+}
+
+cite {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-style: normal;
+    color: #DEB887;
+    line-height: 150%;
+}
+
+.aboutProjectButton {
+    width: 150px;
+    height: 40px;
+    background-color: #DEB887;
+}
+
+.aboutProjectButton:hover {
+    background-color: #CAA473;
 }
 
 @media screen and (max-width: 768px) {
@@ -19,9 +49,24 @@ p {
 
     .homePageBanner {
         display: block;
+        text-align: center;
     }
 
-    .quoteBanner {
-        height: 100px;
+    .qouteBanner {
+        width: 90%;
     }
+
+    blockquote {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    
+    cite {
+        font-size: 16px;
+    }
+
+    .aboutProjectButton {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }    
 }
