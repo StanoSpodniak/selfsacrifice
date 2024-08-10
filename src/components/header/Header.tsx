@@ -13,9 +13,9 @@ const Header = () => {
   useEffect(() => {
     return () => {
       setLanguage(localStorage.getItem("i18nextLng") || "sk");
-      setActiveLink(localStorage.getItem("activeLink") || "/");
+      setActiveLink(sessionStorage.getItem("activeLink") || "/");
       if (location.pathname === '/') {
-        localStorage.setItem('activeLink', "/");
+        sessionStorage.setItem('activeLink', "/");
         setActiveLink("/")
       }
     };
@@ -23,12 +23,12 @@ const Header = () => {
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
-    localStorage.setItem('i18nextLng', lng);
+    sessionStorage.setItem('i18nextLng', lng);
     setLanguage(lng);
   };
 
   const changeActiveLink = (lnk: string) => {
-    localStorage.setItem('activeLink', lnk);
+    sessionStorage.setItem('activeLink', lnk);
   }
 
   const toggleMenu = () => {

@@ -17,7 +17,7 @@ img {
 }
 
 blockquote {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 22px;
     color: #DEB887;
     line-height: 150%;
@@ -25,7 +25,7 @@ blockquote {
 }
 
 cite {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 18px;
     font-style: normal;
     color: #DEB887;
@@ -41,6 +41,14 @@ cite {
 .aboutProjectButton:hover {
     background-color: #CAA473;
 }
+
+@media screen and (max-width: 1100px) {
+    .qouteBanner {
+        padding: 20px;
+        width: 40%;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     img {
@@ -67,6 +75,6 @@ cite {
 
     .aboutProjectButton {
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }    
 }
