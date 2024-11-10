@@ -1,5 +1,7 @@
 import style from "./Footer.module.css";
 
+//pridat loga na vhodne miesto
+
 const Footer = () => {
     return (
         <div className={style.footer}>
