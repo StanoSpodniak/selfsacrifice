@@ -14,11 +14,67 @@
     background-position: center;
 }
 
-.footerText {
-    padding: 60px;
-    text-align: center;
+.footerContainer {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    padding-bottom: 30px;
+}
+
+.footerSection {
+    padding: 60px 100px;
     color: white;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.footerSubsection {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footerTextSection {
+    padding-left: 10px;
+}
+
+p {
+    line-height: 1.5;
+    width: 100%;
+}
+
+.contactButton {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.contactButton:hover {
+    background-color: white;
+    color: #1e378a;
+}
+
+.linkText {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.linkText:hover {
+    text-decoration: underline;
+}
+
+.flag {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.logoEU {
+    width: 250px;
 }
 
 .footerBottom {

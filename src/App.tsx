@@ -7,6 +7,7 @@ import Footer from "./components/footer/Footer";
 
 function App() {
     //Pridať odkaz na: https://ispo.planobnovy.sk/app/vyzvy/455104889489371136
+    //Pod abstrakt doplniť button viac o projekte, ktorý bude odkazovať na stránku o projekte
     const { t } = useTranslation();
 
     const [quotes] = useState([
