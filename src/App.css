@@ -6,6 +6,7 @@ img {
     display: flex;
     justify-content: left;
     background-color: #101517;
+    margin-bottom: 60px;
 }
 
 .qouteBanner {
@@ -32,6 +33,10 @@ cite {
     line-height: 150%;
 }
 
+.aboutSection {
+    margin: 30px 0;
+}
+
 .aboutProjectButton {
     width: 220px;
     height: 50px;
@@ -42,6 +47,16 @@ cite {
 
 .aboutProjectButton:hover {
     background-color: #caa473;
+}
+
+.moreAboutProjectText {
+    text-align: center;
+    color: #1e378a;
+    text-decoration: none;
+}
+
+.moreAboutProjectText:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1100px) {

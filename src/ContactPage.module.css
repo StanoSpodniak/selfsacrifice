@@ -1,0 +1,40 @@
+.contactPageContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 60px 25%;
+    color: #1e378a;
+}
+
+.textSection {
+    width: 50%;
+}
+
+.footerSubsection {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: black;
+    font-size: 1rem;
+}
+
+.footerTextSection {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .contactPageContainer {
+        flex-direction: column;
+        margin: 0;
+        padding: 40px;
+    }
+
+    .textSection {
+        padding: 40px 0;
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}

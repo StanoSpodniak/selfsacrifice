@@ -67,7 +67,20 @@ function App() {
                     </a>
                 </div>
             </div>
-            <AboutProject />
+            <div className="aboutSection">
+                <AboutProject />
+                <a
+                    className="moreAboutProjectText"
+                    href={
+                        localStorage.getItem("i18nextLng") === "en"
+                            ? "/about-project"
+                            : "/o-projekte"
+                    }
+                >
+                    <h2>{t("MoreAboutTheProject")}</h2>
+                </a>
+            </div>
+
             <Footer />
         </>
     );

@@ -7,7 +7,7 @@ header {
     margin-left: 20%;
     display: flex;
     align-items: center;
-    width: 250px;
+    width: 300px;
 }
 
 .logo {
@@ -20,7 +20,7 @@ header {
 
 .title {
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 600;
     color: #1e378a;
 }
 
