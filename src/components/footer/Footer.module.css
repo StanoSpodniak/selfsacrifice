@@ -26,7 +26,7 @@ h2 {
 .footerSection {
     padding: 60px 100px;
     color: white;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .footerSubsection {
@@ -86,4 +86,54 @@ p {
         rgba(18, 34, 84, 0.6) 100%
     );
     font-size: 0.7rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .footerSection {
+        padding: 60px 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footerSection {
+        padding: 60px 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footerContainer {
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footerSection {
+        margin: 0 auto;
+        justify-content: center;
+        padding: 20px 10px;
+        font-size: 1rem;
+    }
+
+    .linkText {
+        font-size: 1rem;
+    }
+
+    .footerSubsection {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .footerIcon {
+        display: none;
+    }
+
+    .flag {
+        width: 125px;
+        margin-bottom: 20px;
+    }
+
+    .logoEU {
+        width: 200px;
+    }
 }

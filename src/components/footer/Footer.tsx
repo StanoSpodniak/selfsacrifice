@@ -1,50 +1,53 @@
 import style from "./Footer.module.css";
+import { useTranslation } from "react-i18next";
 import { MdPlace } from "react-icons/md";
 import { MdMail } from "react-icons/md";
 
 //pridat loga na vhodne miesto
 
 const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <div className={style.footer}>
             <div className={style.footerOverlay}>
                 <div className={style.footerContainer}>
                     <div className={style.footerSection}>
-                        <h2>Nazov stranky</h2>
+                        <h2>{t("footerTitle")}</h2>
                         <div className={style.footerSubsection}>
-                            <MdPlace size={30} />
+                            <MdPlace size={25} className={style.footerIcon} />
                             <div className={style.footerTextSection}>
                                 <p>Tajovského 40</p>
                                 <p>974 01 Banská Bystrica, Slovensko</p>
                             </div>
                         </div>
                         <div className={style.footerSubsection}>
-                            <MdMail size={30} />
+                            <MdMail size={25} className={style.footerIcon} />
                             <div className={style.footerTextSection}>
                                 <p>stanislav.spodniak@umb.sk</p>
                             </div>
                         </div>
                         <a href="/kontakt">
                             <button className={style.contactButton}>
-                                Kontakt
+                                {t("footerContactButton")}
                             </button>
                         </a>
                     </div>
                     <div className={style.footerSection}>
-                        <h2>Navigácia</h2>
+                        <h2>{t("footerNavigationTitle")}</h2>
                         <div className={style.footerSubsection}>
                             <a href="/o-projekte" className={style.linkText}>
-                                <p>O projekte</p>
+                                <p>{t("aboutPageTitle")}</p>
                             </a>
                         </div>
                         <div className={style.footerSubsection}>
                             <a href="/riesitel" className={style.linkText}>
-                                <p>Riešiteľ</p>
+                                <p>{t("researcherPageTitle")}</p>
                             </a>
                         </div>
                         <div className={style.footerSubsection}>
                             <a href="/kontakt" className={style.linkText}>
-                                <p>Kontakt</p>
+                                <p>{t("contactPageTitle")}</p>
                             </a>
                         </div>
                     </div>
@@ -64,7 +67,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={style.footerBottom}>
-                    <p>Copyright © 2024 EASE. All rights reserved.</p>
+                    <p>Copyright © 2024 EASE Project. All rights reserved.</p>
                 </div>
             </div>
         </div>
