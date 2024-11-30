@@ -12,15 +12,15 @@ function App() {
 
     const [quotes] = useState([
         {
-            text: "The greatest virtues are those which are most useful to other persons.",
+            text: "The greatest virtues are those which are most useful to other persons",
             author: "Aristotle",
         },
         {
-            text: "One’s life has value so long as one attributes value to the life of others, by means of love, friendship, and compassion.",
+            text: "One’s life has value so long as one attributes value to the life of others, by means of love, friendship, and compassion",
             author: "Simone de Beauvoir",
         },
         {
-            text: "The purpose of human life is to serve and to show compassion and the will to help others.",
+            text: "The purpose of human life is to serve and to show compassion and the will to help others",
             author: "Albert Schweitzer",
         },
     ]);
@@ -68,6 +68,7 @@ function App() {
                 </div>
             </div>
             <div className="aboutSection">
+                <h2 className="abstractTitle">{t("aboutProjectTitle")}</h2>
                 <AboutProject />
                 <a
                     className="moreAboutProjectText"

@@ -43,15 +43,16 @@ button {
     font-weight: bold;
     background-color: white;
     border: none;
-    border-right: 1px solid lightskyblue;
     cursor: pointer;
 }
 
 .buttonOn {
+    border-right: 1px solid lightskyblue;
     color: #00bfff;
 }
 
 .buttonOff {
+    border-right: 1px solid lightskyblue;
     color: #1e378a;
 }
 

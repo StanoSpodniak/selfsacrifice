@@ -1,0 +1,74 @@
+.titleContainer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e378a;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.title {
+    padding: 0;
+}
+
+.projectDetails {
+    padding: 0 300px 60px 300px;
+}
+
+.projectDetails p {
+    line-height: 2;
+}
+
+.projectDetails a {
+    line-height: 2;
+}
+
+.subtitle {
+    text-align: center;
+    color: #1e378a;
+    padding: 20px 0;
+}
+
+.line {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.line a {
+    text-decoration: none;
+}
+
+.line a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1100px) {
+    .projectDetails {
+        padding: 0 150px 30px 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 26px;
+    }
+
+    .projectDetails {
+        padding: 0 25px 60px 25px;
+    }
+
+    .projectDetails p {
+        line-height: 1.5;
+    }
+
+    .projectDetails a {
+        line-height: 1.5;
+    }
+
+    .line {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+}

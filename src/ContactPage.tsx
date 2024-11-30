@@ -11,7 +11,9 @@ const ContactPage = () => {
     return (
         <>
             <Header />
-            <h2>{t("contactPageTitle")}</h2>
+            <div className={style.titleContainer}>
+                <h2 className={style.title}>{t("contactPageTitle")}</h2>
+            </div>
             <div className={style.contactPageContainer}>
                 <div className={style.textSection}>
                     <h2>EASE Projekt</h2>
@@ -35,6 +37,14 @@ const ContactPage = () => {
                         <div className={style.footerTextSection}>
                             <p>stanislav.spodniak@umb.sk</p>
                         </div>
+                    </div>
+                    <div className={style.footerSubsection}>
+                        <a
+                            href="https://www.ff.umb.sk/sspodniak/"
+                            target="_blank"
+                        >
+                            umb.sk/sspodniak
+                        </a>
                     </div>
                 </div>
                 <iframe

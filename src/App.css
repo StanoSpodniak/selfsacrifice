@@ -49,6 +49,12 @@ cite {
     background-color: #caa473;
 }
 
+.abstractTitle {
+    text-align: center;
+    color: #1e378a;
+    text-decoration: none;
+}
+
 .moreAboutProjectText {
     text-align: center;
     color: #1e378a;

@@ -12,7 +12,6 @@ const AboutProject = () => {
 
     return (
         <>
-            <h2 className={style.title}>{t("aboutProjectTitle")}</h2>
             <p className={style.text}>{t("aboutProject")}</p>
         </>
     );
