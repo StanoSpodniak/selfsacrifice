@@ -27,7 +27,6 @@ header {
 .navContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 12px;
     margin-left: auto;
     margin-right: 20%;
@@ -56,11 +55,11 @@ button {
     color: #1e378a;
 }
 
-buttonOn:last-child {
+.buttonOn:last-child {
     border: none;
 }
 
-buttonOff:last-child {
+.buttonOff:last-child {
     border: none;
 }
 
@@ -138,17 +137,22 @@ buttonOff:last-child {
     }
 
     .navContainer {
-        margin-right: 12px;
+        display: flex;
+        padding-top: 12px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .buttonContainer {
         padding: 0;
+        margin-left: 0;
+        width: 100px;
     }
 
     button {
         padding: 0 12px;
         margin-bottom: 12px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .navContainer {
@@ -161,8 +165,7 @@ buttonOff:last-child {
 
     .hamMenu {
         display: block;
-        margin-left: auto;
-        margin-right: 12px;
+        margin: 0 auto;
         width: 40px;
         height: 40px;
         background-color: #1e378a;

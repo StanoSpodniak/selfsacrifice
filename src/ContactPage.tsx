@@ -4,7 +4,6 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import { MdPlace } from "react-icons/md";
 import { MdMail } from "react-icons/md";
-//https://answers.netlify.com/t/page-not-found-error-looks-like-youve-followed-a-broken-link-or-entered-a-url-that-doesnt-exist-on-this-site/89603
 
 const ContactPage = () => {
     const { t } = useTranslation();
