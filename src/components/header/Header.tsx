@@ -11,14 +11,17 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
-        return () => {
-            setLanguage(localStorage.getItem("i18nextLng") || "sk");
-            setActiveLink(localStorage.getItem("activeLink") || "/");
-            if (location.pathname === "/") {
-                localStorage.setItem("activeLink", "/");
-                setActiveLink("/");
-            }
-        };
+        const currentLanguage = localStorage.getItem("i18nextLng") || "sk";
+        const currentActiveLink = localStorage.getItem("activeLink") || "/";
+
+        setLanguage(currentLanguage);
+
+        if (location.pathname === "/") {
+            localStorage.setItem("activeLink", "/");
+            setActiveLink("/");
+        } else {
+            setActiveLink(currentActiveLink);
+        }
     }, []);
 
     const changeLanguage = (lng: string) => {
