@@ -2,7 +2,7 @@
     margin-bottom: 30px;
     padding: 0 300px;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2;
 }
 
@@ -15,5 +15,6 @@
 @media screen and (max-width: 768px) {
     .text {
         padding: 0 25px;
+        font-size: 16px;
     }
 }
