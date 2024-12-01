@@ -21,7 +21,7 @@ const AboutProjectPage = () => {
                     <p>
                         <strong>{t("app6")}</strong>
                     </p>
-                    <p>Mgr. Stanislav Spodniak, PhD.</p>
+                    <p>Stanislav Spodniak</p>
                 </div>
                 <div className={style.line}>
                     <p>
