@@ -43,7 +43,7 @@ const ContactPage = () => {
                             href="https://www.ff.umb.sk/sspodniak/"
                             target="_blank"
                         >
-                            umb.sk/sspodniak
+                            ff.umb.sk/sspodniak
                         </a>
                     </div>
                 </div>
