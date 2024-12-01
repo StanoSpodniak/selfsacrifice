@@ -19,7 +19,7 @@
 }
 
 .textSection {
-    width: 50%;
+    width: 70%;
 }
 
 .footerSubsection {
@@ -28,7 +28,7 @@
     align-items: center;
     flex-wrap: wrap;
     color: black;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 .footerSubsection a {
