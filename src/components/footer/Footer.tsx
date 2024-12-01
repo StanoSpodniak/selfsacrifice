@@ -67,7 +67,10 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={style.footerBottom}>
-                    <p>Copyright © 2024 EASE Project. All rights reserved.</p>
+                    <p>
+                        Copyright © 2024 EASE Project. All rights reserved. Last
+                        website update: 30 November 2024
+                    </p>
                 </div>
             </div>
         </div>

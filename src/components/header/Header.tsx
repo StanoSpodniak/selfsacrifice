@@ -12,10 +12,10 @@ const Header = () => {
 
     useEffect(() => {
         return () => {
-            setLanguage(sessionStorage.getItem("i18nextLng") || "sk");
-            setActiveLink(sessionStorage.getItem("activeLink") || "/");
+            setLanguage(localStorage.getItem("i18nextLng") || "sk");
+            setActiveLink(localStorage.getItem("activeLink") || "/");
             if (location.pathname === "/") {
-                sessionStorage.setItem("activeLink", "/");
+                localStorage.setItem("activeLink", "/");
                 setActiveLink("/");
             }
         };
@@ -23,12 +23,12 @@ const Header = () => {
 
     const changeLanguage = (lng: string) => {
         i18n.changeLanguage(lng);
-        sessionStorage.setItem("i18nextLng", lng);
+        localStorage.setItem("i18nextLng", lng);
         setLanguage(lng);
     };
 
     const changeActiveLink = (lnk: string) => {
-        sessionStorage.setItem("activeLink", lnk);
+        localStorage.setItem("activeLink", lnk);
     };
 
     const toggleMenu = () => {

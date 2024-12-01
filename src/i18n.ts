@@ -24,7 +24,7 @@ const resources = {
             footerContactButton: "Kontakt",
             footerNavigationTitle: "Navigácia",
             app1: "Dĺžka trvania projektu:",
-            app2: "1. september 2024 – 31. august 2026",
+            app2: "1. september 2024 –⁠⁠⁠⁠⁠⁠ 31. august 2026",
             app3: "Financovanie projektu:",
             app4: "VAIA prostredníctvom výzvy Štipendiá pre excelentných výskumníkov a výskumníčky R2-R4",
             app5: "Podrobnosti o výzve:",
@@ -57,7 +57,7 @@ const resources = {
             footerContactButton: "Contact",
             footerNavigationTitle: "Navigation",
             app1: "Duration of the project:",
-            app2: "1 September 2024 - 31 August 2026",
+            app2: "1 September 2024 –⁠⁠⁠⁠⁠⁠ 31 August 2026",
             app3: "Project funding:",
             app4: "VAIA through the call Fellowships for excellent researchers R2-R4",
             app5: "Details of the call:",
@@ -72,7 +72,7 @@ const resources = {
 
 i18n.use(initReactI18next).init({
     resources,
-    lng: sessionStorage.getItem("i18nextLng") || "sk", // Default language
+    lng: localStorage.getItem("i18nextLng") || "sk", // Default language
     keySeparator: false,
     interpolation: {
         escapeValue: false,
