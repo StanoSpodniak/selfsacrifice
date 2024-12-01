@@ -40,10 +40,10 @@ const AboutProjectPage = () => {
                         <strong>{t("app5")}</strong>
                     </p>
                     <a
-                        href="https://vaia.gov.sk/sk/2023/06/27/stipendia-pre-excelentnych-vyskumnikov-a-vyskumnicky-r2-r4/"
+                        href="https://vvi.gov.sk/vyhladavac-podpory/stipendia-pre-excelentnych-vyskumnikov-a-vyskumnicky-r2-r4"
                         target="_blank"
                     >
-                        VAIA.gov.sk
+                        vvi.gov.sk
                     </a>
                 </div>
             </div>
